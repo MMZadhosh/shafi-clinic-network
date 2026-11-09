@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>صفحه چاپ</title>
+	<style>
+		body {
+			direction: rtl;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+		}
+		.container {
+			display: flex;
+			justify-content: space-between;
+			margin: 20px auto;
+			max-width: 1200px;
+		}
+		.form-section {
+			width: 48%;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		.form-section h2 {
+			text-align: center;
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+		.form-input {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 1rem;
+		}
+		.form-submit {
+			width: 100%;
+			padding: 10px;
+			background-color: #007BFF;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 1rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.form-submit:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="form-section">
+			<h2>فرم اول</h2>
+			<form>
+				<input type="text" class="form-input" placeholder="نام خود را وارد کنید">
+				<input type="submit" class="form-submit" value="ارسال">
+			</form>
+		</div>
+		<div class="form-section">
+			<h2>فرم دوم</h2>
+			<form>
+				<input type="text" class="form-input" placeholder="ایمیل خود را وارد کنید">
+				<input type="submit" class="form-submit" value="ارسال">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
